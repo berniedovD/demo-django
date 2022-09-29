@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  proxy:
+    build:
+      context: ./proxy
+    volumes:
+      - static_data:/vol/static_data
+    ports:
+      - "8000:8000"
+volumes:
+  static_data:
