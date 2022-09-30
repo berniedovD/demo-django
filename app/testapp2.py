@@ -4,7 +4,10 @@ def application(environ, start_response):
     # test
     print ("in application")
     for key in environ.keys():
-        print (key)
+        #print (key)
+        pass
+    user = environ.get('USER')
+    print user 
     start_response("200 OK", [("Content-type", "text/plain")])
     return ["Hello my friend!".encode("utf-8")]
 
