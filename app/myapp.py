@@ -5,3 +5,7 @@ def app(environ, start_response):
             ("Content-Length", str(len(data)))
         ])
         return iter([data])
+    
+print ("start app")
+
+from wsgiref.simple_server import make_server
