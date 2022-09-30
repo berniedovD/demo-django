@@ -20,7 +20,8 @@ RUN chmod -R 755 /vol/web
 USER user 
 #ENTRYPOINT ["/usr/local/bin/python", "/scripts/print.py"]
 #ENTRYPOINT which python
-CMD python /scripts2/py2.py
+#CMD python /scripts2/py2.py
+CMD gunicorn -w 4 myapp:app
 
 #CMD python x.py
 
