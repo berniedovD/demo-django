@@ -7,7 +7,7 @@ def application(environ, start_response):
         #print (key)
         pass
     user = environ.get('USER')
-    print user 
+    print (user) 
     start_response("200 OK", [("Content-type", "text/plain")])
     return ["Hello my friend!".encode("utf-8")]
 
