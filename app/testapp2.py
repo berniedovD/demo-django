@@ -2,12 +2,14 @@ from wsgiref.simple_server import make_server
 
 def application(environ, start_response):
     # test
-    print ("in application")
+    i = 1;
+    print (f"in application {i}")
     for key in environ.keys():
         #print (key)
         pass
     user = environ.get('USER')
-    print (user) 
+    req_method = environ.get("REQUEST_METHOD")
+    print (f"{user}  {req_method}") 
     start_response("200 OK", [("Content-type", "text/plain")])
     return ["Hello my friend!".encode("utf-8")]
 
