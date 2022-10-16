@@ -1,0 +1,266 @@
+[
+    {
+        "Id": "9a2d7b6beec532f069a10625b2e8dbc820f9e8a4f3099ee14585ed600c329e58",
+        "Created": "2022-10-04T02:15:40.766539947Z",
+        "Path": "/docker-entrypoint.sh",
+        "Args": [
+            "nginx",
+            "-g",
+            "daemon off;"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 76002,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2022-10-04T02:15:42.03507125Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:434e6194eb0ab7a26ff88cdb2d009f7553809f962aac2aef8ec4c0cdb03eae94",
+        "ResolvConfPath": "/var/lib/docker/containers/9a2d7b6beec532f069a10625b2e8dbc820f9e8a4f3099ee14585ed600c329e58/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/9a2d7b6beec532f069a10625b2e8dbc820f9e8a4f3099ee14585ed600c329e58/hostname",
+        "HostsPath": "/var/lib/docker/containers/9a2d7b6beec532f069a10625b2e8dbc820f9e8a4f3099ee14585ed600c329e58/hosts",
+        "LogPath": "/var/lib/docker/containers/9a2d7b6beec532f069a10625b2e8dbc820f9e8a4f3099ee14585ed600c329e58/9a2d7b6beec532f069a10625b2e8dbc820f9e8a4f3099ee14585ed600c329e58-json.log",
+        "Name": "/demo-django-proxy-1",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "demo-django_default",
+            "PortBindings": {
+                "8080/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "8080"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "KernelMemory": 0,
+            "KernelMemoryTCP": 0,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "Mounts": [
+                {
+                    "Type": "volume",
+                    "Source": "demo-django_static_data",
+                    "Target": "/vol/static",
+                    "VolumeOptions": {}
+                }
+            ],
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/3e7f83f95d057ea9c5b790231604c07ee5b6bc7028c8e8167edf49181b427bd6-init/diff:/var/lib/docker/overlay2/byjfo83ezonaplovcwsyuwki1/diff:/var/lib/docker/overlay2/pc5wbvl6h1ccvx83c5rrnu8cq/diff:/var/lib/docker/overlay2/f6cjh6w9ijfgz5gai72bd92xa/diff:/var/lib/docker/overlay2/rthnrlye15uac9j3alrzmg7os/diff:/var/lib/docker/overlay2/164c51e9cd8438caf3297d20214dafd0d00c922b684c8227542c53398f20df50/diff:/var/lib/docker/overlay2/814a9f1c9561768462c8bf5b7bdfafb460f48f676b6d1b7d7e8a29e2e595c9c3/diff:/var/lib/docker/overlay2/e677e8c7e2d6589aab126004852d82387f9cb9a4c2b469019f77fbdd99c77586/diff:/var/lib/docker/overlay2/eea65a5443d45f542150947494a6b92a11411ab37c3448263fd61cb122448d7f/diff:/var/lib/docker/overlay2/76e0f3f0ebeb7a7deac174ce4c9d61d1e1fe5b7a2a4a666b7af79edef644e30f/diff:/var/lib/docker/overlay2/5b6288680acd24c6aa396a1ef945e1644fa55ed2708b66876436e84b43b23fa6/diff:/var/lib/docker/overlay2/569dc6258fecd9aa7135af833ab436c4ac3b7467257d049a6b28c165f8de393b/diff",
+                "MergedDir": "/var/lib/docker/overlay2/3e7f83f95d057ea9c5b790231604c07ee5b6bc7028c8e8167edf49181b427bd6/merged",
+                "UpperDir": "/var/lib/docker/overlay2/3e7f83f95d057ea9c5b790231604c07ee5b6bc7028c8e8167edf49181b427bd6/diff",
+                "WorkDir": "/var/lib/docker/overlay2/3e7f83f95d057ea9c5b790231604c07ee5b6bc7028c8e8167edf49181b427bd6/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "demo-django_static_data",
+                "Source": "/var/lib/docker/volumes/demo-django_static_data/_data",
+                "Destination": "/vol/static",
+                "Driver": "local",
+                "Mode": "z",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "9a2d7b6beec5",
+            "Domainname": "",
+            "User": "nginx",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "8080/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "NGINX_VERSION=1.23.1",
+                "NJS_VERSION=0.7.6",
+                "PKG_RELEASE=1"
+            ],
+            "Cmd": [
+                "nginx",
+                "-g",
+                "daemon off;"
+            ],
+            "Image": "demo-django-proxy",
+            "Volumes": {
+                "/vol/static": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/docker-entrypoint.sh"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "com.docker.compose.config-hash": "c4db39489db5199765895d9d20aef8597328a8cdc4f4bae859688632303baa43",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "app:service_started",
+                "com.docker.compose.image": "sha256:434e6194eb0ab7a26ff88cdb2d009f7553809f962aac2aef8ec4c0cdb03eae94",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "demo-django",
+                "com.docker.compose.project.config_files": "/home/ubuntu/demo-django/docker-compose-deploy.yml",
+                "com.docker.compose.project.working_dir": "/home/ubuntu/demo-django",
+                "com.docker.compose.service": "proxy",
+                "com.docker.compose.version": "2.10.2",
+                "maintainer": "NGINX Docker Maintainers <docker-maint@nginx.com>"
+            },
+            "StopSignal": "SIGQUIT"
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "8fdc04e9518cfd14a422637a7814de2d4f2720e31d43af2e5dca5d90982a7f7b",
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "Ports": {
+                "8080/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "8080"
+                    },
+                    {
+                        "HostIp": "::",
+                        "HostPort": "8080"
+                    }
+                ]
+            },
+            "SandboxKey": "/var/run/docker/netns/8fdc04e9518c",
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "demo-django_default": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "demo-django-proxy-1",
+                        "proxy",
+                        "9a2d7b6beec5"
+                    ],
+                    "NetworkID": "631645719c6be745769628e833daff52b7656e14c3c3531f8864b56abcb6f93c",
+                    "EndpointID": "fcd0215acdb667ad9affd2bbb6a0ede9bdcbfcaf8b27b62397357b5703a99536",
+                    "Gateway": "172.26.0.1",
+                    "IPAddress": "172.26.0.3",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": "02:42:ac:1a:00:03",
+                    "DriverOpts": null
+                }
+            }
+        }
+    }
+]

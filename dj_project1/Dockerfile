@@ -14,4 +14,6 @@ RUN mkdir -p /vol/web/static
 RUN chmod -R 755 /vol/web
 #USER user 
 CMD "entrypoint.sh"
+#CMD python /scripts/pyloop.py
+#CMD python manage.py runserver 9000
 
